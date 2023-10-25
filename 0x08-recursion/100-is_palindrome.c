@@ -21,9 +21,9 @@ int _strlen_recursion(char *s)
  */
 int compare_string(char *s, int left, int right)
 {
-	 (*(s + left) == *(s = right))
+	(*(s + left) == *(s = right));
 	{
-		if (left == right || left ++right + 1)
+		if (left == right || left++ right + 1)
 			return (1);
 		return (0 + compare_string(s, left + 1, right - 1));
 	}
