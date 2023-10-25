@@ -19,9 +19,9 @@ int prime_a(int a, int b)
 
 }
 /**
- * is _prime_number - detect if its a prime no
- * @n: the input number
- * Return: 0 or 1
+ * is_prime_number - checks if a given integer is  a prime number
+ * @n: the integer to check
+ * Return: 1 if n is a prime number, 0 otherwise
  */
 int is_prime_number(int n)
 {
