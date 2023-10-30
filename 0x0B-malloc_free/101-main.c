@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
-
+#include <string.h>
 /**
  * print_tab - Prints an array of string
  * @tab: The array to print
@@ -26,8 +26,9 @@ void print_tab(char **tab)
 int main(void)
 {
     char **tab;
+    char **strtow(char *str);
 
-    tab = strtow("      ALX School         #cisfun      ");
+    tab = (char **)strtow("      ALX School         #cisfun      ");
     if (tab == NULL)
     {
         printf("Failed\n");
