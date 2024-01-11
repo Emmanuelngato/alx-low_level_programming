@@ -1,1 +1,12 @@
-147
+def largest_palindrome_product(n):
+    largest_palindrome = 0
+    min_num = 10**(n-1)
+    max_num = 10**n
+    for i in range(max_num-1, min_num-1, -1):
+        for j in range(i, min_num-1, -1):
+            product = i * j
+            if product <= largest_palindrome:
+                break
+            if str(product) == str(product)[::-1]:
+                largest_palindrome = product
+    return largest_palindrome
